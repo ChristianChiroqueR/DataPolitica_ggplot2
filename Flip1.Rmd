@@ -35,10 +35,7 @@ class: inverse
 # ¿Dónde estamos en el curso?
 
 
-- Introducción a la Ciencia de Datos
-
-
-- Funciones e introducción al Tidyverse
+- Introducción a la Estadística
 
 
 - Tidyverse: Manipulación de datos con {dplyr} 
@@ -47,8 +44,6 @@ class: inverse
 - **Tidyverse: Visualización de datos con {ggplot2}**
 
 
-- Datos perdidos
- 
 
 ---
 
