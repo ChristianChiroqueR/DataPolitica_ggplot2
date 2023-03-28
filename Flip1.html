@@ -40,10 +40,7 @@ class: inverse
 # ¿Dónde estamos en el curso?
 
 
-- Introducción a la Ciencia de Datos
-
-
-- Funciones e introducción al Tidyverse
+- Introducción a la Estadística
 
 
 - Tidyverse: Manipulación de datos con {dplyr} 
@@ -52,8 +49,6 @@ class: inverse
 - **Tidyverse: Visualización de datos con {ggplot2}**
 
 
-- Datos perdidos
- 
 
 ---
 
@@ -2294,7 +2289,7 @@ Primero generamos un gráfico
 data %&gt;%  #&lt;&lt;
   ggplot()+  #&lt;&lt;
   aes(x = gdpPercap, y = lifeExp,  #&lt;&lt;
-      size = pop, color = country) %&gt;%  #&lt;&lt;
+      size = pop, color = country) +  #&lt;&lt;
   geom_point(show.legend = F, alpha = 0.7) +  #&lt;&lt;
   scale_x_log10() +  #&lt;&lt;
   labs(x = 'GDP Per Capita',  #&lt;&lt;
@@ -2317,7 +2312,7 @@ Primero generamos un gráfico
 data %&gt;%
   ggplot()+
   aes(x = gdpPercap, y = lifeExp,
-      size = pop, color = country) %&gt;%
+      size = pop, color = country) +
   geom_point(show.legend = F, alpha = 0.7) +
   scale_x_log10() +
   labs(x = 'GDP Per Capita',
@@ -2364,7 +2359,7 @@ data %&gt;%
 data %&gt;% 
   ggplot()+
   aes(x = gdpPercap, y = lifeExp,
-      size = pop, color = country) %&gt;% 
+      size = pop, color = country) + 
   geom_point(show.legend = F, alpha = 0.7) +
   scale_x_log10() +
   labs(x = 'GDP Per Capita',
@@ -2387,7 +2382,7 @@ Luego le añadimos la transición animada y lo personalizamos
 data %&gt;%  #&lt;&lt;
   ggplot()+  #&lt;&lt;
   aes(x = gdpPercap, y = lifeExp,  #&lt;&lt;
-      size = pop, color = country) %&gt;%  #&lt;&lt;
+      size = pop, color = country) +  #&lt;&lt;
   geom_point(show.legend = F, alpha = 0.7) +  #&lt;&lt;
   scale_x_log10() +  #&lt;&lt;
   labs(x = 'GDP Per Capita',  #&lt;&lt;
@@ -2410,7 +2405,7 @@ Luego le añadimos la transición animada y lo personalizamos
 data %&gt;%
   ggplot()+
   aes(x = gdpPercap, y = lifeExp,
-      size = pop, color = country) %&gt;%
+      size = pop, color = country) +
   geom_point(show.legend = F, alpha = 0.7) +
   scale_x_log10() +
   labs(x = 'GDP Per Capita',
@@ -2434,7 +2429,7 @@ Luego le añadimos la transición animada y lo personalizamos
 data %&gt;%
   ggplot()+
   aes(x = gdpPercap, y = lifeExp,
-      size = pop, color = country) %&gt;%
+      size = pop, color = country) +
   geom_point(show.legend = F, alpha = 0.7) +
   scale_x_log10() +
   labs(x = 'GDP Per Capita',
@@ -2460,7 +2455,7 @@ Luego le añadimos la transición animada y lo personalizamos
 data %&gt;%
   ggplot()+
   aes(x = gdpPercap, y = lifeExp,
-      size = pop, color = country) %&gt;%
+      size = pop, color = country) +
   geom_point(show.legend = F, alpha = 0.7) +
   scale_x_log10() +
   labs(x = 'GDP Per Capita',
@@ -2511,7 +2506,7 @@ data %&gt;%
 data %&gt;% 
   ggplot()+
   aes(x = gdpPercap, y = lifeExp,
-      size = pop, color = country) %&gt;% 
+      size = pop, color = country) + 
   geom_point(show.legend = F, alpha = 0.7) +
   scale_x_log10() +
   labs(x = 'GDP Per Capita',
